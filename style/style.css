@@ -78,6 +78,7 @@ body::after {
   margin-bottom: 1rem;
 }
 .profile__name {
+  font-size: 1.8rem;
   font-weight: 700;
   color: hsl(229deg, 23%, 23%);
 }
