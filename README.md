@@ -10,7 +10,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Preview
 
-- Live Site URL: [Click here](#)
+- Live Site URL: [Click here](https://hesam-fattahi.github.io/profile-card-component-main/)
 
 ### Built with
 
