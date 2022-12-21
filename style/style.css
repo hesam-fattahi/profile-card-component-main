@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  height: 100vh;
+  background-color: hsl(185deg, 75%, 39%);
+  padding: 1.8rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background: url(../images/bg-pattern-bottom.svg);
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: url(../images/bg-pattern-top.svg);
+  background-position: bottom right;
+  z-index: 0;
+}
+
+.profile {
+  max-width: 35rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.2rem;
+  position: relative;
+  box-shadow: 0 0.5rem 2rem rgba(45, 50, 72, 0.25);
+  z-index: 2;
+}
+.profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13.5rem;
+  background: url(../images/bg-pattern-card.svg);
+  z-index: 1;
+}
+.profile__pic {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 1.8rem;
+  z-index: 2;
+}
+.profile .flex-group {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+.profile__name {
+  font-weight: 700;
+  color: hsl(229deg, 23%, 23%);
+}
+.profile__age {
+  font-weight: 400;
+  color: hsl(227deg, 10%, 46%);
+}
+.profile__place {
+  font-size: 1.6rem;
+  color: hsl(227deg, 10%, 46%);
+  margin-bottom: 2.4rem;
+}
+.profile__stats {
+  padding: 2rem 0;
+  border-top: 1px solid #e3e3e3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.stat__number {
+  font-weight: 700;
+  color: hsl(229deg, 23%, 23%);
+  margin-bottom: 0.4rem;
+}
+.stat__text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: hsl(227deg, 10%, 46%);
+}/*# sourceMappingURL=style.css.map */
