@@ -18,40 +18,38 @@ body {
   place-items: center;
   position: relative;
 }
-body::before {
+body::before, body::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
   width: 50%;
   height: 50%;
+}
+body::before {
+  bottom: 0;
+  right: 0;
   background: url(../images/bg-pattern-bottom.svg);
 }
 body::after {
-  content: "";
-  position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
-  height: 50%;
   background: url(../images/bg-pattern-top.svg);
   background-position: bottom right;
   z-index: 0;
 }
 
 .profile {
-  max-width: 35rem;
   width: 100%;
+  max-width: 35rem;
   background-color: white;
+  padding-top: 8.2rem;
   border-radius: 1.6rem;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8.2rem;
-  position: relative;
   box-shadow: 0 0.5rem 2rem rgba(45, 50, 72, 0.25);
-  z-index: 2;
 }
 .profile::before {
   content: "";
@@ -67,9 +65,9 @@ body::after {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 50%;
-  border: 5px solid white;
   margin-bottom: 1.8rem;
+  border: 5px solid white;
+  border-radius: 50%;
   z-index: 2;
 }
 .profile .flex-group {
@@ -92,13 +90,13 @@ body::after {
   margin-bottom: 2.4rem;
 }
 .profile__stats {
+  width: 100%;
   padding: 2rem 0;
   border-top: 1px solid #e3e3e3;
-  width: 100%;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  text-align: center;
 }
 
 .stat__number {
