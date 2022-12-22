@@ -12,35 +12,16 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.8rem;
   height: 100vh;
-  background-color: hsl(185deg, 75%, 39%);
   padding: 1.8rem;
   display: grid;
   place-items: center;
-  position: relative;
-}
-body::before, body::after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 50%;
-}
-body::before {
-  bottom: 0;
-  right: 0;
-  background: url(../images/bg-pattern-bottom.svg);
-}
-body::after {
-  top: 0;
-  left: 0;
-  background: url(../images/bg-pattern-top.svg);
-  background-position: bottom right;
-  z-index: 0;
+  background: url(../images/bg-pattern-top.svg) -60% 200% no-repeat, url(../images/bg-pattern-bottom.svg) 150% -145% no-repeat;
+  background-color: hsl(185deg, 75%, 39%);
 }
 
 .profile {
   width: 100%;
   max-width: 35rem;
-  background-color: white;
   padding-top: 8.2rem;
   border-radius: 1.6rem;
   overflow: hidden;
@@ -50,16 +31,8 @@ body::after {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0.5rem 2rem rgba(45, 50, 72, 0.25);
-}
-.profile::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 13.5rem;
-  background: url(../images/bg-pattern-card.svg);
-  z-index: 1;
+  background: url(../images/bg-pattern-card.svg) 0% -3% no-repeat;
+  background-color: white;
 }
 .profile__pic {
   width: -webkit-fit-content;
